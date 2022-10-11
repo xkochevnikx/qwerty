@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--! header start -->
+    <header>
+      <nav>
+        <div class="header__box">
+          <div class="header__box_logo">
+            <a href="https://www.instagram.com/"
+              ><img src="./img/Instagram_logo.png" alt="" />
+            </a>
+          </div>
+          <div class="header__search_box">
+            <input id="inpSearch" type="text" placeholder="Поиск" />
+            <ol class="header__box_navbar_list">
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> home </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> maps_ugc </span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <span id="add__box" class="material-symbols-outlined">
+                    add_box
+                  </span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> explore </span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined"> favorite </span></a
+                >
+              </li>
+              <li id="account__admin">
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    account_circle
+                  </span></a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--! header END -->
+    <!--! section admin start -->
+    <section>
+      <div class="admin__box_main">
+        <div class="admin__box">
+          <input id="inpImg" type="url" placeholder="изображение" />
+          <input id="inpDescription" type="text" placeholder="описание" />
+          <button id="btnCreate">создать</button>
+        </div>
+      </div>
+    </section>
+    <!--! section admin END -->
+    <!--! section modal start -->
+    <section>
+      <div class="main_modal_window"></div>
+    </section>
+    <!--! section modal END -->
+    <!-- ! ============ Edit START ================ -->
+    <div class="main_modal">
+      <div class="main_modal_window2">
+        <button class="window_edit_close btns">Close</button>
+        <input
+          type="text"
+          name=""
+          id="input"
+          class="window_edit_details btns"
+          placeholder="                                          Description"
+        />
+        <input
+          type="url"
+          name=""
+          id="input"
+          class="window_edit_url btns"
+          placeholder="                                                                 Url"
+        />
+        <button id="button" class="btn_change btns">CHANGE</button>
+      </div>
+    </div>
+    <!-- ! ============ Edit End ================ -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
